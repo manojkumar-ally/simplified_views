@@ -1,15 +1,10 @@
-import { useState, useRef } from "react";
+import { useRef } from "react";
 import "./styles.css";
 
 import ColumnResize from "./columnResize";
 import { generateData } from "./randomGenerate";
 
-const TAB = {
-  COLUMN_RESIZE: "resize"
-};
-
 export default function App() {
-  let { currentTab, setTab } = useState(TAB.COLUMN_RESIZE);
   let data = useRef(generateData(10, true));
 
   const groupings = [
@@ -18,8 +13,6 @@ export default function App() {
     { key: "owner", name: "Owner" },
     { key: "time_period", name: "Time Period" }
   ];
-
-  console.log("data.current", data.current);
 
   return (
     <div className="relative">

@@ -1,0 +1,134 @@
+body {
+  font-family: "SF Pro Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.relative {
+  position: relative;
+}
+
+.content {
+  width: calc(100% - 400px);
+  overflow-x: scroll;
+  margin-left: 400px;
+  margin-right: 50px;
+}
+
+.table {
+  width: max-content;
+}
+
+.row {
+  display: flex;
+  border-bottom: 1px solid rgba(145, 177, 205, 0.3);
+  overflow: hidden;
+}
+
+.column {
+  width: 300px;
+  height: 40px;
+  position: relative;
+  text-overflow: ellipsis;
+}
+
+.cell {
+  padding: 5px;
+  padding-left: 10px;
+}
+
+.header {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.header-row {
+  border-top: 1px solid rgba(145, 177, 205, 0.3);
+}
+
+.resizable {
+  background: #eef3f8;
+}
+
+.resizer {
+  width: 3px;
+  height: 100%;
+  background: #ccd7e0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: col-resize;
+}
+
+.table-scrollable {
+  display: flex;
+  overflow-y: scroll;
+}
+
+.title {
+  min-width: 400px;
+  width: 400px;
+  max-width: 650px;
+  position: absolute;
+  left: 0px;
+  border-bottom: 1px solid rgba(145, 177, 205, 0.3);
+  border-right: 2px solid rgba(145, 177, 205, 0.3);
+}
+
+.title.header {
+  margin-top: -1px;
+  border-top: 1px solid rgba(145, 177, 205, 0.3);
+}
+
+.type {
+  min-width: 200px;
+  width: 200px;
+  max-width: 400px;
+}
+
+.owner {
+  min-width: 300px;
+  width: 300px;
+  max-width: 500px;
+}
+
+.timePeriod {
+  min-width: 300px;
+  width: 300px;
+  max-width: 500px;
+}
+
+.progress {
+  min-width: 400px;
+  width: 400px;
+  max-width: 600px;
+}
+
+.score {
+  min-width: 100px;
+  width: 100px;
+  max-width: 300px;
+}
+
+.flex {
+  display: flex;
+}
+
+.m-b-10 {
+  margin-bottom: 10px;
+}
+
+.m-l-10 {
+  margin-left: 10px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.pointer:hover {
+  text-decoration: underline;
+}

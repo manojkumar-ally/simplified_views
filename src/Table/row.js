@@ -1,5 +1,5 @@
 import { Draggable } from "react-beautiful-dnd";
-import { COLUMNS } from "./constants";
+import { COLUMNS } from "../constants";
 
 export default ({ row, toggle, index }) => (
   <Draggable draggableId={row.id} index={index} key={`row-${row.id}`}>

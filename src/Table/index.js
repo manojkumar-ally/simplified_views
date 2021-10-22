@@ -5,7 +5,8 @@ import Body from "./body";
 export default ({
   onElementClick,
   onRowDragEnd,
-  objectives,
+  data,
+  groupKey,
   expandStatus,
   toggle
 }) => (
@@ -18,7 +19,8 @@ export default ({
             {(provided) => (
               <Body
                 provided={provided}
-                objectives={objectives}
+                data={data}
+                groupKey={groupKey}
                 expandStatus={expandStatus}
                 toggle={toggle}
               />

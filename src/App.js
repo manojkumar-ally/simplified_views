@@ -15,7 +15,7 @@ const groupings = [
 export default function App() {
   let objectives = useRef(generateData(10, true));
   let [data, setData] = useState(objectives.current);
-  let [groupKey, setGroupKey] = useState("type");
+  let [groupKey, setGroupKey] = useState("none");
 
   useEffect(() => {
     if (groupKey !== "none") {

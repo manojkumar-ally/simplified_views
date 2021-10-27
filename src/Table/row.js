@@ -1,11 +1,11 @@
 import { Draggable } from "react-beautiful-dnd";
 import { COLUMNS } from "../constants";
 
-export default ({ row, toggle, index }) => (
+export default ({ isChild, row, toggle, index }) => (
   <Draggable draggableId={row.id} index={index} key={`row-${row.id}`}>
     {(provided) => (
       <tr
-        className="row"
+        className={`row ${isChild ? "child-row" : "top-row"}`}
         ref={provided.innerRef}
         {...provided.draggableProps}
         {...provided.dragHandleProps}

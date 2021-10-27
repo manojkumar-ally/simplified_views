@@ -8,6 +8,7 @@ const RenderList = ({ objectives, expandStatus, toggle }) =>
       ...(expandStatus[row.id]
         ? row.children.map((child) => (
             <Row
+              isChild
               key={child.id}
               row={child}
               toggle={toggle}
@@ -23,7 +24,7 @@ const RenderGroups = ({ groups, expandStatus, toggle }) => {
     .filter(({ type }) => type === "group")
     .forEach((group) => {
       tableRows.push(
-        <tr key={group.value}>
+        <tr key={group.value} class="group-row">
           <td>
             <strong>{group.name}:</strong> {group.value}
           </td>

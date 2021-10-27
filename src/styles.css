@@ -48,6 +48,26 @@ tr {
   border-bottom: 1px solid rgba(145, 177, 205, 0.3);
 }
 
+.group-row {
+  height: 72px;
+}
+
+.top-row {
+  height: 72px;
+}
+
+.top-row .title {
+  padding-left: 5px;
+}
+
+.child-row {
+  height: 64px;
+}
+
+.child-row .title {
+  padding-left: 20px;
+}
+
 .resizable {
   background: #eef3f8;
 }
@@ -66,6 +86,7 @@ tr {
   width: 400px;
   min-width: 400px;
   max-width: 650px;
+  box-sizing: border-box;
 }
 
 .type {
